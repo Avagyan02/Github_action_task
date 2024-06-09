@@ -5,5 +5,6 @@ module "vpc_module" {
 module "ec2_module" {
   source = "./modules/ec2"
   subnet_id = module.vpc_module.subnet_id
+  ec2_name = var.commit_hash
 }
 
