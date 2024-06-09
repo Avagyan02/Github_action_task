@@ -10,7 +10,7 @@ variable "ec2_key_name" {
 
 variable "ec2_instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t2.nano"
 }
 
 variable "ec2_name" {
@@ -19,13 +19,13 @@ variable "ec2_name" {
 }
 
 variable "subnet_id" {
-  type = number
+  type = string
 }
 
-variable "sg_inbound_rules" {
-  type = list(number)
-}
+# variable "sg_inbound_rules" {
+#   type = list(number)
+# }
 
-variable "sg_outbound_rules" {
-  type = list(number)
-}
+# variable "sg_outbound_rules" {
+#   type = list(number)
+# }
